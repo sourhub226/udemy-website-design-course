@@ -1,0 +1,258 @@
+/*=============================
+Default Values
+Font: Ubuntu, Pacifico(for logo only) sans serif
+Colors:
+1. Imperial Primer: #222f3e;
+2. Wild Caribean Green: #1dd1a1;
+3. Light gray: #fbfbfb;
+4. Gray: #ccc;
+==============================*/
+
+
+/*=============================
+        Basic Setup
+==============================*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+li{
+    list-style: none;
+    display:inline-block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+
+/*=============================
+            Header
+==============================*/
+body{
+    background-color:#fbfbfb;
+}
+
+.page-header{
+    background-color: #222f3e;
+    color: #fff;
+    font-family: "pacifico",cursive;
+    padding-left: 70px;
+}
+.page-header span{
+    color: #1dd1a1;
+}
+/* nav-menu */
+.nav-menu{
+    margin: 10px 0px 10px 70px;
+    word-spacing: 5px;
+}
+
+.nav-menu a{
+    color: #222f3e;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+}
+
+.nav-menu a:hover{
+    color: #1dd1a1;
+    font-weight: 700;
+}
+
+.nav-menu li{
+    padding: 15px 15px 15px 0px;
+}
+
+/* Header image */
+.header-image{
+    background-image: linear-gradient(rgba(34,47,62,0.8),rgba(0,0,0,0.8)),url(../img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    
+}
+
+.header-image h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+}
+
+.header-image p{
+    margin: 20px 170px;
+    text-align: center;
+}
+
+
+/*=============================
+        Journey ways
+==============================*/
+.journey-ways{
+    width: 90%;
+    margin: auto;
+    padding: 70px;
+}
+
+.journey-ways h2{
+    color:  #222f3e;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 300
+}
+
+.journey-ways span{
+    color: #1dd1a1;
+    font-weight: 700;
+}
+
+#journey-explain{
+    color:  #222f3e;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.travel-ways{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.ways{
+    width: 30%;
+    margin: auto;
+}
+
+
+.ways h3{
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: #222f3e;
+}
+
+.ways p{
+    margin-top: 10px;
+    color: #222f3e;
+    margin: 10px 20px;
+    
+}
+
+.svg-color-invert{
+    filter:invert();
+}
+
+
+/*=============================
+        City gallery 
+==============================*/
+
+.cities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 50px;
+}
+
+.city-img{
+    width: 29%;
+    margin-bottom: 35px;
+    background-color: #222f3e;
+    color: white;
+}
+.city-img img{
+    width: 100%;
+}
+
+.city-img h3{
+    padding: 15px;
+    color: #b2e6d4;
+}
+
+.city-img p{
+    padding: 0px 15px 15px 15px;
+}
+
+/*=============================
+            Footer
+==============================*/
+footer{
+    background-color: #1dd1a1;
+    color: #222f3e;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 70px;
+}
+
+/*=============================
+        Mobile Screen
+==============================*/
+
+@media (max-width: 800px) {
+    .page-header{
+        padding-left: 0px;
+        text-align: center;
+    }
+    
+    .nav-menu{
+        word-spacing:inherit;
+        margin: 10px 20px;
+        text-align: center;
+    }
+    .nav-menu li{
+        padding: 15px;
+    }
+    .journey-ways{
+        padding: 30px 20px;
+    }
+    
+    .ways{
+        width: auto;
+        margin: 15px;
+    }
+    .header-image p{
+        margin: 20px 40px;
+
+    }
+    .header-image h2{
+        padding: 20px 30px 0px;
+    }
+    .city-img{
+        width: 39%;
+    }
+    footer{
+        padding-left: 0px;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 600px){
+    .city-img{
+        width: 89%;
+    }
+}
